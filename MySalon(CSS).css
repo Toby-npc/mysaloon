@@ -1,0 +1,349 @@
+/* ================= GLOBAL & HIGH-END THEME VARIABLES ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', 'Segoe UI', serif;
+}
+
+body {
+    background-color: #faf6f0; /* Luxe Warm Cashmere Cream */
+    color: #2b2526; /* Deep Rich Charcoal Espresso */
+    line-height: 1.6;
+}
+
+/* ================= MODERN CONDUIT NAVIGATION ================= */
+nav {
+    background-color: #ffffff;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ebdcd0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #b0717a; /* Sophisticated Dull Dusty Rose Accent */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #635657;
+    font-size: 15px;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #b0717a;
+    border-bottom: 2px solid #b0717a;
+    padding-bottom: 4px;
+}
+
+/* ================= THE HERO DISPLAY ================= */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 8%;
+    background-color: #f2e9e1; /* Smooth Soft Mink Shade */
+    border-radius: 0 0 60px 60px;
+}
+
+.hero-text {
+    max-width: 550px;
+}
+
+.hero-text h1 {
+    font-size: 52px;
+    color: #2b2526;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-text h1 span {
+    color: #b0717a;
+}
+
+.hero-text p {
+    color: #695e5f;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Luxury Soft Rounded Button */
+.button {
+    display: inline-block;
+    background-color: #b0717a;
+    color: white;
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #8c535b;
+    transform: translateY(-2px);
+}
+
+.hero-box {
+    background: white;
+    padding: 50px;
+    border-radius: 32px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(140, 83, 91, 0.06);
+}
+
+.hero-box .icon {
+    font-size: 65px;
+    margin-bottom: 12px;
+}
+
+/* ================= STRUCTURAL GRID & SECTIONS ================= */
+section {
+    padding: 80px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    color: #2b2526;
+    letter-spacing: 0.5px;
+}
+
+.section-title p {
+    color: #8a7c7d;
+    margin-top: 8px;
+}
+
+/* Service Presentation Grid */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.service-card {
+    background-color: #ffffff;
+    padding: 30px 24px;
+    border-radius: 24px;
+    border: 1px solid #ebdcd0;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: #b0717a;
+    box-shadow: 0 12px 24px rgba(176, 113, 122, 0.05);
+}
+
+.service-icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #2b2526;
+}
+
+.service-card p {
+    color: #7d7071;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.price {
+    color: #b0717a;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* ================= INTERACTIVE BOOKING ELEMENTS ================= */
+.booking-form {
+    max-width: 750px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 32px;
+    border: 1px solid #ebdcd0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #4f4445;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #d9c7ba;
+    border-radius: 14px;
+    font-size: 15px;
+    color: #2b2526;
+    background-color: #faf8f5;
+    transition: border 0.2s ease;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #b0717a;
+    background-color: #ffffff;
+}
+
+/* Time Selection Node Configurations */
+.time-slots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.time {
+    background-color: #faf8f5;
+    border: 1px solid #d9c7ba;
+    color: #635657;
+    padding: 10px 18px;
+    border-radius: 16px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.time:hover {
+    border-color: #b0717a;
+    color: #b0717a;
+}
+
+.time.selected {
+    background-color: #b0717a;
+    border-color: #b0717a;
+    color: white;
+}
+
+/* ================= CLIENT CONFIRMATION DATA CARDS ================= */
+.booking-details {
+    max-width: 750px;
+    margin: auto;
+}
+
+.booking-card {
+    background-color: #ffffff;
+    border-radius: 28px;
+    padding: 30px;
+    border: 1px solid #ebdcd0;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.01);
+}
+
+.booking-card h3 {
+    color: #b0717a;
+    font-size: 22px;
+    margin-bottom: 15px;
+    border-bottom: 1px dashed #ebdcd0;
+    padding-bottom: 10px;
+}
+
+.booking-card p {
+    font-size: 15px;
+    margin: 8px 0;
+    color: #4f4445;
+}
+
+.modify-btn {
+    background-color: #f7ece6;
+    color: #8c535b;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: background 0.2s;
+}
+
+.modify-btn:hover {
+    background-color: #ebdcd0;
+}
+
+.cancel-btn {
+    background-color: #f7f2f2;
+    color: #9c4444;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-left: 8px;
+    transition: background 0.2s;
+}
+
+.cancel-btn:hover {
+    background-color: #e3d3d3;
+}
+
+/* ================= VISUAL STRUCTURAL FOOTER ================= */
+footer {
+    background-color: #2b2526;
+    color: #f2e9e1;
+    text-align: center;
+    padding: 35px;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+/* Responsive Media Settings */
+@media(max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+    nav ul {
+        gap: 15px;
+    }
+}
+    .hero-text h1 {
+        font-size: 40px;
+    }
+}
