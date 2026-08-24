@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book - MySalon</title>
+    <link rel="stylesheet" href="MySalon(CSS).css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">MySalon</div>
+    <ul>
+        <li><a href="MySalon(HOME).html" class="active">Home</a></li>
+        <li><a href="MySalon(SERVICES).html">Services</a></li>
+        <li><a href="MySalon(BOOKING).html">Booking</a></li>
+        <li><a href="MySalon(MYBOOKING).html">My Booking</a></li>
+    </ul>
+</nav>
+
+<section id="booking-section">
+    <div class="section-title">
+        <h2>Book Your Appointment</h2>
+        <p>Fill out your parameters to secure your salon allocation space</p>
+    </div>
+    <div class="booking-form">
+        <form id="appointmentForm">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" required placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="tel" id="phoneNumber" required placeholder="012-3456789">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="serviceSelect">Select Service</label>
+                    <select id="serviceSelect" required>
+                        <option value="" disabled selected>Choose a service</option>
+                        <option value="Haircut & Styling ($50)">Haircut & Styling ($50)</option>
+                        <option value="Hair Coloring ($120)">Hair Coloring ($120)</option>
+                        <option value="Manicure & Pedicure ($45)">Manicure & Pedicure ($45)</option>
+                        <option value="Facial & Spa ($80)">Facial & Spa ($80)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="bookingDate">Preferred Date</label>
+                    <input type="date" id="bookingDate" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Preferred Time Slot</label>
+                <div class="time-slots">
+                    <div class="time" data-time="09:00 AM">09:00 AM</div>
+                    <div class="time" data-time="11:00 AM">11:00 AM</div>
+                    <div class="time" data-time="01:00 PM">01:00 PM</div>
+                    <div class="time" data-time="03:00 PM">03:00 PM</div>
+                    <div class="time" data-time="05:00 PM">05:00 PM</div>
+                </div>
+            </div>
+            <button type="submit" class="button" style="width: 100%; margin-top: 10px;">Confirm Appointment</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 MySalon Management System. All rights reserved.</p>
+</footer>
+
+<script src="MySalon(SCRIPT).js"></script>
+</body>
+</html>
